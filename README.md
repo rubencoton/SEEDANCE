@@ -37,5 +37,6 @@ Puede requerir ajuste de payload/endpoint segun la plataforma oficial que uses.
 - Plan gratis/local: `docs/PLAN_GRATIS_LOCAL_SIDAM.md`
 - Estado ultima version: `docs/SEEDANCE_ULTIMA_VERSION_2026-03-20.md`
 - Lanzador local: `scripts/iniciar_seedance_local.cmd`
+- Icono v2.0: `brand/icono_rubencoton_seedance_v2.ico`
 - Regenerar inventario:
   `powershell -ExecutionPolicy Bypass -File scripts/generar_inventario_sidam.ps1`
