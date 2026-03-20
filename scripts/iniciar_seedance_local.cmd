@@ -2,6 +2,7 @@
 setlocal EnableExtensions
 set "APP_DIR=C:\Users\elrub\Desktop\CARPETA CODEX\01_PROYECTOS\SEEDANCE\RECUPERADO_SIDAM\seedance2.0"
 set "APP_URL=http://localhost:5173"
+set "LOG_DIR=%APP_DIR%\logs"
 
 if not exist "%APP_DIR%" (
   echo [ERROR] No existe la carpeta local de Seedance:
@@ -49,10 +50,31 @@ if not exist "%READY_FLAG%" (
   )
 )
 
+if not exist "%LOG_DIR%" mkdir "%LOG_DIR%" >nul 2>nul
+
+set "P3001=0"
+set "P5173=0"
+netstat -ano | findstr /R /C:":3001 .*LISTENING" /C:":3001 .*ESCUCHANDO" >nul && set "P3001=1"
+netstat -ano | findstr /R /C:":5173 .*LISTENING" /C:":5173 .*ESCUCHANDO" >nul && set "P5173=1"
+
+if "%P3001%"=="0" (
+  echo [INFO] Iniciando servidor API en puerto 3001...
+  start "Seedance Server" /min cmd /c "\"%NPM_CMD%\" run dev:server"
+) else (
+  echo [INFO] Servidor API ya activo en puerto 3001.
+)
+
+if "%P5173%"=="0" (
+  echo [INFO] Iniciando cliente web en puerto 5173...
+  start "Seedance Client" /min cmd /c "\"%NPM_CMD%\" run dev:client"
+) else (
+  echo [INFO] Cliente web ya activo en puerto 5173.
+)
+
 echo [INFO] Abriendo Seedance local en %APP_URL%
 start "" "%APP_URL%"
-call "%NPM_CMD%" run dev
-exit /b %ERRORLEVEL%
+echo [OK] Seedance local lanzado.
+exit /b 0
 
 :fail
 echo [ERROR] Fallo la preparacion/conexion local de Seedance.
