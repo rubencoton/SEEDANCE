@@ -6,3 +6,7 @@ __pycache__/
 
 # Output
 outputs/
+
+# Local recoveries and cloned external repos
+RECUPERADO_SIDAM/
+ALTERNATIVA_LOCAL_GRATIS/

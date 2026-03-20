@@ -17,6 +17,8 @@ Por eso este repo queda listo para:
 - `scripts/`: scripts de integracion
 - `models/`: carpeta reservada para modelos/pesos
 - `docs/`: notas y fuentes
+- `RECUPERADO_SIDAM/`: repos y recursos comunitarios recuperados en local
+- `ALTERNATIVA_LOCAL_GRATIS/`: alternativas open-source para ejecutar video IA en local
 
 ## Arranque rapido
 1. Copia `.env.example` como `.env`
@@ -29,3 +31,9 @@ Por eso este repo queda listo para:
 ## Nota tecnica
 El script incluido es un adaptador base.
 Puede requerir ajuste de payload/endpoint segun la plataforma oficial que uses.
+
+## Recuperacion local y modo gratis
+- Inventario local: `docs/INVENTARIO_LOCAL_SIDAM.md`
+- Plan gratis/local: `docs/PLAN_GRATIS_LOCAL_SIDAM.md`
+- Regenerar inventario:
+  `powershell -ExecutionPolicy Bypass -File scripts/generar_inventario_sidam.ps1`
