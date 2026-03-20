@@ -1,0 +1,31 @@
+﻿# SEEDANCE
+
+Repositorio preparado para trabajar con el modelo Seedance mas reciente para creacion de video.
+
+## Modelo objetivo
+- Modelo oficial mas reciente: Seedance 2.0
+- Fecha de lanzamiento oficial: 2026-02-12
+- Estado de hosting directo en este repo: pendiente de pesos oficiales publicos
+
+## Importante
+En las fuentes oficiales revisadas no aparece descarga publica de pesos/checkpoint para autoalojar Seedance 2.0.
+Por eso este repo queda listo para:
+- Integracion por API/plataforma oficial
+- Estructura para activar Git LFS si en el futuro publican pesos descargables
+
+## Estructura
+- `scripts/`: scripts de integracion
+- `models/`: carpeta reservada para modelos/pesos
+- `docs/`: notas y fuentes
+
+## Arranque rapido
+1. Copia `.env.example` como `.env`
+2. Completa tus credenciales
+3. Instala dependencias:
+   `pip install -r requirements.txt`
+4. Ejecuta:
+   `python scripts/generar_video_seedance.py "Un perro corriendo por la playa al amanecer"`
+
+## Nota tecnica
+El script incluido es un adaptador base.
+Puede requerir ajuste de payload/endpoint segun la plataforma oficial que uses.
