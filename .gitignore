@@ -10,3 +10,9 @@ outputs/
 # Local recoveries and cloned external repos
 RECUPERADO_SIDAM/
 ALTERNATIVA_LOCAL_GRATIS/
+
+# Local app artifacts
+APP_LOCAL_CERO/.venv_local_cero/
+APP_LOCAL_CERO/logs/
+APP_LOCAL_CERO/.ready_local_cero
+APP_LOCAL_CERO/outputs_local_cero/

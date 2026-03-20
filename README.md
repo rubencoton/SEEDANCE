@@ -38,5 +38,16 @@ Puede requerir ajuste de payload/endpoint segun la plataforma oficial que uses.
 - Estado ultima version: `docs/SEEDANCE_ULTIMA_VERSION_2026-03-20.md`
 - Lanzador local: `scripts/iniciar_seedance_local.cmd`
 - Icono v2.0: `brand/icono_rubencoton_seedance_v2.ico`
+- Lanzador local cero: `scripts/iniciar_seedance_ruben_coton_cero.cmd`
 - Regenerar inventario:
   `powershell -ExecutionPolicy Bypass -File scripts/generar_inventario_sidam.ps1`
+
+## App local cero
+- Nombre de acceso directo: `SEEDANCE RUBEN COTON.lnk`
+- App local: `APP_LOCAL_CERO/app_seedance_ruben_coton.py`
+- Modelo local por defecto: `THUDM/CogVideoX1.5-5B`
+- URL local: `http://127.0.0.1:7860`
+
+Nota:
+- Este modo no usa API de pago externa.
+- La primera ejecucion descarga pesos del modelo (archivo grande).
