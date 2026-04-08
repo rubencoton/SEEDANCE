@@ -62,3 +62,10 @@ Nota:
 - Estado: sincronizado para migracion a nuevo PC/sistema.
 - Preparado para retomar desde GitHub.
 - Ultima revision: 2026-04-08 15:26:05 +02:00
+
+<!-- MIGRACION_CLOUD_START -->
+## ESTADO MIGRACION CLOUD
+- Revisado: 2026-04-08
+- Repo listo para continuar en otro sistema.
+- Estado Git al cerrar: sincronizado en GitHub.
+<!-- MIGRACION_CLOUD_END -->
