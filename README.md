@@ -51,3 +51,9 @@ Puede requerir ajuste de payload/endpoint segun la plataforma oficial que uses.
 Nota:
 - Este modo no usa API de pago externa.
 - La primera ejecucion descarga pesos del modelo (archivo grande).
+
+## CIERRE MIGRACION CLOUD
+
+- Fecha: 2026-04-08
+- Estado: preparado para retomar desde nuevo sistema
+
